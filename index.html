@@ -1,174 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalCare BE-1</title>
 
-        <link rel="stylesheet" href="styles.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-        <!-- =====BOX ICONS===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style/style.css">
 
-        <title>CalCare BE 1</title>
-    </head>
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div class="nav__logo">
-                    <img src="Calcare.png" width="60" height="15" alt="Calcare">
-                </div>
-                
+    <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
 
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Pilih Makanan</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Tracking</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Hasil</a></li>
-                    </ul>
-                </div>
+</head>
+<body>
 
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+<!-- header section starts  -->
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home bd-grid" id="home">
-                <div class="home__data">
-                    <h1 class="home__title">Selamat Datang di </br> <span class="home__title-color">Calcare</span></h1>
-                    <h3 class="home__tittle">Keep Your Calories For Your Health</h3>
-                    <h5 class="home__tittle">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</br>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</h5></br>
-                    <a href="https://drive.google.com/file/d/1FXHm7RGbjtPeuuF6e0W3KftCtCHFitU0/view?usp=sharing" class="button">Let's Track Calorie</a>
-                </div>
+<header>
 
-                <!-- <div class="home__social">
-                    <a href="https://www.linkedin.com/in/puput-fatmawati-a2a829204/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://instagram.com/puputfm__?igshid=YmMyMTA2M2Y=" class="home__social-icon"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://github.com/Puputfatmawati" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-                </div> -->
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
 
-                <div class="images">
-                    <img src="bg-home.png" width="2000" height="1000" class="shape">
-                    
-                </div>
-            </section>
+    <div class="nav__logo">
+        <img src="images/Calcare.png" width="60" height="40" alt="Calcare">
+    </div>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <!-- <a href="#about">about</a> -->
+        <a href="makanan.html">Pilih Makanan</a>
+        <a href="#">Tracking</a>
+        <a href="#">Hasil</a>
+    </nav>
 
+    <div class="icons">
+        <!-- <a href="#" class="fas fa-heart"></a> -->
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <!-- <a href="#" class="fas fa-user"></a> -->
+    </div>
+   
+</header>
 
-            </section>
-            <!--===== Article Kesehatan =====-->
-            <section class="blog section" id="blog">
-                <h2 class="section-title">Article Kesehatan</h2>
-                   
-                </div>
-        
-                <div class="blog-container">
-        
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="calori.jpg" alt="Blog">
-                        </div>
-        
-                        <div class="blog-text">
-                            <span> 5 Juni 2022/ Mengenali Kalori</span>
-                            <a href="#" class="blog-title">Mengenali Kalori Sebagai Kunci Berat Badan Sehat</a>
-                            <p>Kalori merupakan nilai yang menunjukkan jumlah energi yang diperoleh dari makanan dan minuman  Memenuhi kebutuhan</p>
-                            <a href="https://www.alodokter.com/kalori-kunci-berat-badan-sehat"> Selengkapnya</a>
-                        </div>
-                    </div>
-        
-        
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="diet2.webp" alt="Blog">
-                        </div>
-        
-                        <div class="blog-text">
-                            <span>08 April 2021/ Cara DIet Aman</span>
-                            <a href="#" class="blog-title">Cara Diet yang Aman Turunkan Berat Badan</a>
-                            <p>kelebihan berat badan terjadi akibat terlalu banyak kalori yang masuk ke dalam tubuh.</p>
-                            <a href="https://krakataumedika.com/info-media/artikel/cara-diet-yang-aman-untuk-turunkan-berat-badan-tanpa-bahayakan-kesehatan"> Selengkapnya</a>
-                        </div>
-                    </div>
-        
-        
-                    <div class="blog-box">
-                        <div class="blog-img">
-                            <img src="calll.webp" alt="Blog">
-                        </div>
-        
-                        <div class="blog-text">
-                            <span>11 Mei 2019/ Konsumsi Kalori</span>
-                            <a href="#" class="blog-title">Konsumsi kalori, di antara kenikmatan dan kesehatan</a>
-                            <p>Kesejahteraan meningkat tak menjamin asupan lebih sehat. Hal ini terlihat dalam perubahan pola</p>
-                            <a href="https://lokadata.id/artikel/konsumsi-kalori-di-antara-kenikmatan-dan-kesehatan"> Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>	
-                
-        
-            </section>
+<!-- header section ends -->
 
+<!-- home section starts  -->
 
-        <!--===== FOOTER =====-->
-        <!-- <footer class="footer">
-            <div class="footer__title">
-                <img src="Calcare.png" width="60" height="15" alt="Calcare">
-                <p>Calorie Care</br> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
-                    Daerah Khusus Ibukota Jakarta 12950</p>
-                    <div class="footer__social">
-                        <h1>Layanan</h1></br>
-                        <p>Tentang Kami</br> Kebijakan dan Privasi</br> Hubungi Kami </p>
-                    </div>
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Welcome To Calcare</h3>
+        <span> Keep Your Calories For Your Health</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore assumenda iste voluptate dolorem pariatur.</p>
+        <a href="#" class="btn">Let's Track Calorie</a>
+    </div>
+    
+</section>
+
+ <!--===== Article Kesehatan =====-->
+ <section class="blog section" id="blog">
+
+    <h1 class="latbel"> Article <span>Kesehatan</span> </h1>
+
+    <div class="blog-container">
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/calori.jpg" alt="Blog">
             </div>
-            
-        </footer> -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <img src="Calcare.png" width="60" height="15" alt="Calcare">
-                        <h3>Calorie Care</h3>
-                        <p> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
-                            Daerah Khusus Ibukota Jakarta 12950</p>
-                        
-                    </div>
-                    <div class="footer-col">
-                        <h4>Layanan </h4>
-                        <ul>
-                            <li><a href="#">Tentang Kami</a></li>
-                            <li><a href="#">Kebijakan & Privasi</a></li>
-                            <li><a href="#">Hubungi Kami</a></li>
-                        </ul>
-                    </div>
 
-                    <div class="footer-col">
-                        <h4>Chalange Patner</h4>
-                        <img src="danone.webp" width="60" height="15" alt="Calcare">
-                        <h4>Mitra</h4>
-                        <img src="skilvul.svg" width="60" height="15" alt="Calcare">
-                    </div>
-                </div>
+            <div class="blog-text">
+                <span> 5 Juni 2022/ Mengenali Kalori</span>
+                <a href="#" class="blog-title">Mengenali Kalori Sebagai Kunci Berat Badan Sehat</a>
+                <p>Kalori merupakan nilai yang menunjukkan jumlah energi yang diperoleh dari makanan dan minuman  Memenuhi kebutuhan</p>
+                <a href="https://www.alodokter.com/kalori-kunci-berat-badan-sehat"> Selengkapnya</a>
             </div>
-            <center><p> Copyright By Danone Back End Grup 1</p></center>
-       </footer>
-        <!-- <footer class="footer">
-            <div class="footer-left">
-                <h3>Calcare</h3>
-                <div class="Calorie-care">
-                    <img src="Calcare.png" alt="">
-                </div>
-                <p class="footer-copyright">Danone Grup 1 2022</p>
+        </div>
+
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/diet2.webp" alt="Blog">
             </div>
-        </footer> -->
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+            <div class="blog-text">
+                <span>08 April 2021/ Cara DIet Aman</span>
+                <a href="#" class="blog-title">Cara Diet yang Aman Turunkan Berat Badan</a>
+                <p>kelebihan berat badan terjadi akibat terlalu banyak kalori yang masuk ke dalam tubuh.</p>
+                <a href="https://krakataumedika.com/info-media/artikel/cara-diet-yang-aman-untuk-turunkan-berat-badan-tanpa-bahayakan-kesehatan"> Selengkapnya</a>
+            </div>
+        </div>
 
-        <!--===== Script Js=====-->
-        <script src="script.js"></script>
-    </body>
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/calll.webp" alt="Blog">
+            </div>
+
+            <div class="blog-text">
+                <span>11 Mei 2019/ Konsumsi Kalori</span>
+                <a href="#" class="blog-title">Konsumsi kalori, di antara kenikmatan dan kesehatan</a>
+                <p>Kesejahteraan meningkat tak menjamin asupan lebih sehat. Hal ini terlihat dalam perubahan pola</p>
+                <a href="https://lokadata.id/artikel/konsumsi-kalori-di-antara-kenikmatan-dan-kesehatan"> Selengkapnya</a>
+            </div>
+        </div>
+    </div>	
+    
+
+</section>
+
+<!-- contact section starts  -->
+
+<!-- <section class="contact" id="contact">
+
+    <h1 class="heading"> <span> contact </span> us </h1>
+
+    <div class="row">
+
+        <form action="">
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="number" placeholder="number" class="box">
+            <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn">
+        </form>
+
+        <div class="image">
+            <img src="images/contact-img.svg" alt="">
+        </div>
+
+    </div>
+
+</section> -->
+
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/Calcare.png" width="60" height="40" alt="Calcare">
+            <h3>Calori Care</h3>
+            <p> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
+                Daerah Khusus Ibukota Jakarta 12950</p>
+        </div>
+
+        <div class="box">
+            <h3>Layanan</h3>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kebijakan & Privasi</a>
+            <a href="#">Hubungi Kami</a>
+        </div>
+
+        <div class="box">
+            <h3>Patner</h3>
+            <img src="/images/danone2.png" width="100" height="80" alt="Calcare">
+            <br>Jl. H. R. Rasuna Said </br>
+                Daerah Khusus Ibukota Jakarta 12950</p>
+        </div>
+
+        <div class="box">
+            <h3>Mitra</h3>
+            <img src="/images/skilvul.png" width="80" height="40" alt="Calcare" >
+            <h4>PT IMPACTBYTE TEKNOLOGI EDUKASI.</h4>
+        </div>
+
+    </div>
+
+    <div class="credit"> Copyright ©  <span>BE Group1 - Danone #Tech4Impact 2022  </span> | All Right Reserved </div>
+
+</section>
+
+<!-- footer section ends -->
+   
+</body>
 </html>
