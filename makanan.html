@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalCare BE-1</title>
-
+    <title>calCare - Peduli Kebutuhan Kalorimu</title>
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style/style.css">
-
-    
 </head>
 <body>
     <header>
@@ -32,11 +28,11 @@
             <a href="#contact">Hasil</a>
         </nav>
     
-        <div class="icons">
+        <!-- <div class="icons"> -->
             <!-- <a href="#" class="fas fa-heart"></a> -->
-            <a href="#" class="fas fa-shopping-cart"></a>
+            <!-- <a href="#" class="fas fa-shopping-cart"></a> -->
             <!-- <a href="#" class="fas fa-user"></a> -->
-        </div>
+        <!-- </div> -->
        
     </header>
 <!-- prodcuts section starts  -->
@@ -44,16 +40,16 @@
 <section class="products" id="products">
 
     <h1 class="head"> Makanan </h1>
+    <p class="head" id="deskripsiHead">Pilihlah makanan yang kamu makan hari ini. Kebutuhan kalori harian akan </p>
     <div class="search-box">
         <h2>Pilih Makanan</h2>
         <form  id="formSearch">
             <input type="text" placeholder="Search" id="search" class="search">
         </form>
     </div>
-    <div class="box-container">
-    </br>
+    <div class="box-container" id="list-card">
+    <!-- </br>
         <div class="box">
-            <!-- <span class="discount">-10%</span> -->
             <div class="image">
                 <img src="images/ayamg.png" alt="">
                 <div class="icons">
@@ -67,7 +63,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-15%</span> -->
             <div class="image">
                 <img src="images/tg.png" alt="">
                 <div class="icons">
@@ -81,7 +76,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-5%</span> -->
             <div class="image">
                 <img src="images/sp.png" alt="">
                 <div class="icons">
@@ -95,7 +89,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-20%</span> -->
             <div class="image">
                 <img src="images/th.png" alt="">
                 <div class="icons">
@@ -109,7 +102,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-17%</span> -->
             <div class="image">
                 <img src="images/susu.png" alt="">
                 <div class="icons">
@@ -123,7 +115,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-3%</span> -->
             <div class="image">
                 <img src="images/pisang.png" alt="">
                 <div class="icons">
@@ -137,7 +128,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-18%</span> -->
             <div class="image">
                 <img src="images/kangkung.png" alt="">
                 <div class="icons">
@@ -151,7 +141,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-10%</span> -->
             <div class="image">
                 <img src="images/empal.png" alt="">
                 <div class="icons">
@@ -165,7 +154,6 @@
         </div>
 
         <div class="box">
-            <!-- <span class="discount">-5%</span> -->
             <div class="image">
                 <img src="images/roti.png" alt="">
                 <div class="icons">
@@ -176,7 +164,7 @@
                 <h3>Roti</h3>
                 <div class="calori"> 264,6  </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
@@ -222,6 +210,7 @@
 
 </section>
 
+<script src="js/makanan.js"></script>
     
 </body>
 </html>

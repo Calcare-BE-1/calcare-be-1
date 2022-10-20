@@ -113,7 +113,7 @@ header .fa-bars{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background:url(../images/bg2.jpg) no-repeat;
+    background:url(../images/home-background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -322,10 +322,18 @@ header .fa-bars{
     text-align: center;
     font-size: 3rem;
     color:#333;
-    padding:6rem;
-    margin:3rem 2rem;
+    padding-top:6rem;
+    padding-right:6rem;
+    padding-left:6rem;
+    padding-bottom: 0rem;
+    margin:1rem 2rem;
     background:none;
     justify-content: space-between;
+}
+
+#deskripsiHead {
+    padding-top:0rem;
+    font-size: 2rem;
 }
 /* search */
 .search-box{
@@ -340,7 +348,7 @@ header .fa-bars{
     background-color: rgb(245, 247, 250);
     border: 2px solid #100252;
     padding:0.5rem 1rem;
-    border-radius: 50px;
+    border-radius: 10px;
     font-size: 1.5rem;
     color:#03036c;
     font-family: inherit;
@@ -379,6 +387,7 @@ header .fa-bars{
     text-align: center;
     padding-top: 2rem;
     overflow:hidden;
+    width: 25rem;
 }
 
 .products .box-container .box .image img{
