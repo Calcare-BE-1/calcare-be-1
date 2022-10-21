@@ -1,109 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>calCare - Peduli Kebutuhan Kalorimu</title>
-
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style/style.css">
-
+    <link rel="stylesheet" href="style/style.css" />
     <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
-
-</head>
-<body>
-
-<!-- header section starts  -->
-
-<header>
-
-    <input type="checkbox" name="" id="toggler">
-    <label for="toggler" class="fas fa-bars"></label>
-
-    <div class="nav__logo">
-        <img src="images/Calcare.png" width="60" alt="Calcare">
-    </div>
-    <nav class="navbar">
+  </head>
+  <body>
+    <!-- Bagian Header  -->
+    <header>
+      <!-- Navigasi -->
+      <div class="nav__logo">
+        <img src="images/Calcare.png" width="60" alt="Calcare" />
+      </div>
+      <nav class="navbar">
         <a href="index.html">Home</a>
-        <!-- <a href="#about">about</a> -->
+        <!-- <a href="form.html">Form</a> -->
         <a href="makanan.html">Pilih Makanan</a>
         <a href="#">Tracking</a>
         <a href="#">Hasil</a>
-    </nav>
-
-    <div class="icons">
-        <!-- <a href="#" class="fas fa-heart"></a> -->
-        <a href="#" class="fas fa-shopping-cart"></a>
-        <!-- <a href="#" class="fas fa-user"></a> -->
-    </div>
-   
-</header>
-<!-- header section ends -->
-
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
+      </nav>
+      <!-- Keranjang makanan -->
+      <!-- <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-user"></a>
+            </div> -->
+    </header>
+    <!-- Bagian Home  -->
+    <section class="home" id="home">
+      <div class="content">
         <h3>Welcome to calCare</h3>
-        <span> Keep your calories for your health</span>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore assumenda iste voluptate dolorem pariatur.</p>
-        <a href="form.html" class="btn">Let's Track Calorie</a>
-    </div>
-    
-</section>
-
- <!--===== Article Kesehatan =====-->
- <section class="blog section" id="blog">
-
-    <h1 class="latbel"> Article <span>Kesehatan</span> </h1>
-
-    <div class="blog-container" id="card-artikel">
-    </div>	
-</section>
-
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/Calcare.png" width="60" height="40" alt="Calcare">
+        <span>Keep your calories for your health</span>
+        <p>Hitung kebutuhan kalori, pilih dan atur pola makanan, jaga kebutuhan nutrisi harian, dan mulai jalani pola hidup sehat bersama calCare.</p>
+        <a href="form.html" class="btn">Mulai Track Kalori</a>
+      </div>
+    </section>
+    <!--===== Artikel Kesehatan =====-->
+    <section class="blog section" id="blog">
+      <h1 class="latbel">Artikel Kesehatan</h1>
+      <!-- Card Artikel Kesehatan -->
+      <div class="blog-container" id="card-artikel"></div>
+    </section>
+    <!-- Bagian Footer -->
+    <footer>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <img src="images/Calcare.png" width="60" alt="Calcare" />
             <h3>Calori Care</h3>
-            <p> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
-                Daerah Khusus Ibukota Jakarta 12950</p>
-        </div>
-
-        <div class="box">
+            <p>Keep Your Calorie For Your Health</p>
+          </div>
+          <div class="box">
             <h3>Layanan</h3>
             <a href="#">Tentang Kami</a>
             <a href="#">Kebijakan & Privasi</a>
             <a href="#">Hubungi Kami</a>
-        </div>
-
-        <div class="box">
-            <h3>Patner</h3>
-            <img src="/images/danone2.png" width="100" height="80" alt="Calcare">
-            <br>Jl. H. R. Rasuna Said </br>
-                Daerah Khusus Ibukota Jakarta 12950</p>
-        </div>
-
-        <div class="box">
+          </div>
+          <div class="box">
+            <h3>Challenge Partner</h3>
+            <img src="/images/danone2.png" width="100" alt="Calcare" />
+          </div>
+          <div class="box">
             <h3>Mitra</h3>
-            <img src="/images/skilvul.png" width="80" height="40" alt="Calcare" >
-            <h4>PT IMPACTBYTE TEKNOLOGI EDUKASI.</h4>
+            <img src="/images/skilvul.png" width="80" alt="Calcare" />
+            <h4>PT.IMPACTBYTE TEKNOLOGI EDUKASI</h4>
+          </div>
         </div>
-
-    </div>
-
-    <div class="credit"> Copyright ©  <span>BE Group1 - Danone #Tech4Impact 2022  </span> | All Right Reserved </div>
-
-</section>
-
-<!-- footer section ends -->
-   <script src="js/index.js"></script>
-</body>
+        <!-- Bagian Credit -->
+        <div class="credit">Copyright © <span>BE Group 1 - Danone #Tech4Impact 2022 </span> | All Right Reserved</div>
+      </section>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
 </html>

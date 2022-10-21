@@ -16,7 +16,6 @@ let getCardArtikel = async () => {
     <div class="blog-text">
         <span>${item.tanggal}</span>
         <a href="#" class="blog-title">${item.judul}</a>
-        <p>${item.deskripsi}</p>
         <a href="${item.selengkapnya}">Selengkapnya</a>
     </div>
 </div>`;
