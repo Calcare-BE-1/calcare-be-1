@@ -1,227 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalCare BE-1</title>
-
-    <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
-
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style/style.css">
-
-    
-</head>
-<body>
-    <header>
-
-        <input type="checkbox" name="" id="toggler">
-        <label for="toggler" class="fas fa-bars"></label>
-    
-        <div class="nav__logo">
-            <img src="images/Calcare.png" width="60" height="40" alt="Calcare">
-        </div>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <!-- <a href="#about">about</a> -->
-            <a href="makanan.html">Pilih Makanan</a>
-            <a href="#review">Tracking</a>
-            <a href="#contact">Hasil</a>
-        </nav>
-    
-        <div class="icons">
-            <!-- <a href="#" class="fas fa-heart"></a> -->
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <!-- <a href="#" class="fas fa-user"></a> -->
-        </div>
-       
-    </header>
-<!-- prodcuts section starts  -->
-
-<section class="products" id="products">
-
-    <h1 class="head"> Makanan </h1>
-    <div class="search-box">
-        <h2>Pilih Makanan</h2>
-        <form  id="formSearch">
-            <input type="text" placeholder="Search" id="search" class="search">
-        </form>
-    </div>
-    <div class="box-container">
-    </br>
-        <div class="box">
-            <!-- <span class="discount">-10%</span> -->
-            <div class="image">
-                <img src="images/ayamg.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>calCare - Peduli Kebutuhan Kalorimu</title>
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
+        <!-- custom css file link  -->
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <!-- Bagian Header -->
+        <header>
+            <!-- Navigasi -->
+            <div class="nav__logo">
+                <img src="images/Calcare.png" width="60" alt="Calcare">
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <!-- <a href="form.html">Form</a> -->
+                <a href="makanan.html">Pilih Makanan</a>
+                <a href="#review">Tracking</a>
+                <a href="#contact">Hasil</a>
+            </nav>
+            <!-- Keranjang makanan -->
+            <!-- <div class="icons">
+                <a href="#" class="fas fa-heart"></a>
+                <a href="#" class="fas fa-shopping-cart"></a>
+                <a href="#" class="fas fa-user"></a>
+            </div> -->
+        </header>
+        <section class="products" id="products">
+            <h1 class="head"> Makanan </h1>
+            <p class="head" id="deskripsiHead">Pilihlah makanan yang kamu makan hari ini. Kebutuhan kalori harian akan </p>
+            <div class="search-box">
+                <h2>Pilih Makanan</h2>
+                <form  id="formSearch">
+                    <input type="text" placeholder="Search" id="search" class="search">
+                </form>
+            </div>
+            <div class="box-container" id="list-card">
+            </div>
+        </section>
+        <!-- Bagian Footer -->
+        <footer>
+            <section class="footer">
+              <div class="box-container">
+                <div class="box">
+                  <img src="images/Calcare.png" width="60" alt="Calcare" />
+                  <h3>Calori Care</h3>
+                  <p>Keep Your Calorie For Your Health</p>
                 </div>
-            </div>
-            <div class="content">
-                <h3>Ayam Goreng</h3>
-                <div class="calori"> 245,9 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-15%</span> -->
-            <div class="image">
-                <img src="images/tg.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
+                <div class="box">
+                  <h3>Layanan</h3>
+                  <a href="#">Tentang Kami</a>
+                  <a href="#">Kebijakan & Privasi</a>
+                  <a href="#">Hubungi Kami</a>
                 </div>
-            </div>
-            <div class="content">
-                <h3>Tempe Goreng</h3>
-                <div class="calori"> 225 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-5%</span> -->
-            <div class="image">
-                <img src="images/sp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
+                <div class="box">
+                  <h3>Challenge Partner</h3>
+                  <img src="/images/danone2.png" width="100" alt="Calcare" />
                 </div>
-            </div>
-            <div class="content">
-                <h3>Sayur Sop</h3>
-                <div class="calori"> 145 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-20%</span> -->
-            <div class="image">
-                <img src="images/th.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
+                <div class="box">
+                  <h3>Mitra</h3>
+                  <img src="/images/skilvul.png" width="80" alt="Calcare" />
+                  <h4>PT.IMPACTBYTE TEKNOLOGI EDUKASI</h4>
                 </div>
-            </div>
-            <div class="content">
-                <h3>Tahu Goreng</h3>
-                <div class="calori"> 115 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-17%</span> -->
-            <div class="image">
-                <img src="images/susu.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Susu</h3>
-                <div class="calori"> 42,3 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-3%</span> -->
-            <div class="image">
-                <img src="images/pisang.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Pisang</h3>
-                <div class="calori"> 88,7 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-18%</span> -->
-            <div class="image">
-                <img src="images/kangkung.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Kangkung</h3>
-                <div class="calori"> 98 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-10%</span> -->
-            <div class="image">
-                <img src="images/empal.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Empal Daging</h3>
-                <div class="calori"> 248 kcal  </div>
-            </div>
-        </div>
-
-        <div class="box">
-            <!-- <span class="discount">-5%</span> -->
-            <div class="image">
-                <img src="images/roti.png" alt="">
-                <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>Roti</h3>
-                <div class="calori"> 264,6  </div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- contact section ends -->
-
-<!-- footer section starts  -->
-<section class="footer">
-
-    <div class="box-container">
-
-        <div class="box">
-            <img src="images/Calcare.png" width="60" height="40" alt="Calcare">
-            <h3>Calori Care</h3>
-            <p> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
-                Daerah Khusus Ibukota Jakarta 12950</p>
-        </div>
-
-        <div class="box">
-            <h3>Layanan</h3>
-            <a href="#">Tentang Kami</a>
-            <a href="#">Kebijakan & Privasi</a>
-            <a href="#">Hubungi Kami</a>
-        </div>
-
-        <div class="box">
-            <h3>Patner</h3>
-            <img src="images/danone2.png" width="100" height="80" alt="danone">
-            <br>Jl. H. R. Rasuna Said </br>
-                Daerah Khusus Ibukota Jakarta 12950</p>
-        </div>
-
-        <div class="box">
-            <h3>Mitra</h3>
-            <img src="images/skilvul.png" width="80" height="40" alt="skilvul" >
-            <h4>PT IMPACTBYTE TEKNOLOGI EDUKASI.</h4>
-        </div>
-
-    </div>
-
-    <div class="credit"> Copyright ©  <span>BE Group1 - Danone #Tech4Impact 2022  </span> | All Right Reserved </div>
-
-</section>
-
-    
-</body>
+              </div>
+              <!-- Bagian Credit -->
+              <div class="credit">Copyright © <span>BE Group 1 - Danone #Tech4Impact 2022 </span> | All Right Reserved</div>
+            </section>
+          </footer>
+        <script src="js/makanan.js"></script> 
+    </body>
 </html>
