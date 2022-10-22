@@ -1,5 +1,5 @@
+// Call Food API
 let listCards = document.getElementById("list-card");
-
 let cardFood = async () => {
   let URL = "https://634ff24678563c1d82b45254.mockapi.io/makanan";
   let response = await fetch(URL);
@@ -13,7 +13,7 @@ let cardFood = async () => {
             <div class="image">
                 <img src="${item.image}" alt="">
                 <div class="icons">
-                    <a href="#" class="cart-btn">Pilih</a>
+                    <a href="#" class="cart-btn" id="choose-foods">Pilih</a>
                 </div>
             </div>
             <div class="content">
@@ -23,5 +23,24 @@ let cardFood = async () => {
         </div>`;
   });
 };
-
 cardFood();
+
+// Call Desc Total Calories
+let nameSaved = localStorage.getItem("nameInput");
+let sum = Number(localStorage.getItem("sum"));
+console.log(sum);
+let p = document.getElementById("deskripsiHead");
+p.innerHTML = `Hai <b>${nameSaved}</b>. Jumlah kebutuhan kalorimu adalah <b>${sum.toFixed(1)} Kkal</b>. Pilihlah makanan yang kamu makan hari ini dan tracking kalorimu.`;
+
+// Pilih makanan
+let chooseBtn = document.querySelector("choose-foods");
+let terpilih = document.getElementById("foodsTerpilih");
+
+chooseBtn.addEventListener("click", (el) => {
+  console.log(terpilih);
+  cardFood();
+  el.preventDefault();
+  localStorage.setItem(`${item.id}`, `${item.name}`);
+});
+
+terpilih.innerHTML = `Makanan yang kamu pilih: ${item.name}`;

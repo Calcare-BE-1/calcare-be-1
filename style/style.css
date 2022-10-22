@@ -360,6 +360,7 @@ header .fa-bars {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 50px;
+  font-size: 2rem;
 }
 
 .products .box-container .box {
@@ -368,6 +369,10 @@ header .fa-bars {
   border-radius: 0rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
   position: relative;
+}
+
+.box{
+  background-color: white;
 }
 
 /* .products .box-container .box .discount {
@@ -428,7 +433,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .image .icons a:hover {
-  background: #333;
+  background: #0c6e71;
 }
 
 .products .box-container .box .content {
