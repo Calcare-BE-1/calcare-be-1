@@ -37,5 +37,5 @@ function sumInput() {
   localStorage.setItem("sum", sum);
 }
 
-// laki-laki: (88.4 + 13.4 * weight) + (4.8 * height) – (5.68 * age)
-// wanita: (447.6 + 9.25 * weight) + (3.10 * heigth) – (4.33 * age)
+// laki-laki: (88.4 + 13.4 * weight) + (4.8 * height) - (5.68 * age)
+// wanita: (447.6 + 9.25 * weight) + (3.10 * heigth) - (4.33 * age)

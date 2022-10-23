@@ -22,6 +22,29 @@ let cardFood = async () => {
             </div>
         </div>`;
   });
+
+  let chooseBtn = document.getElementById("choose-foods");
+  let terpilih = document.getElementById("foodsTerpilih");
+  // if (chooseBtn.onclick == true) {
+  //   (el, index) => {
+  //     console.log(terpilih);
+  //     el.preventDefault();
+  //     localStorage.setItem(`${foods[0].id}`, `${foods[0].name}`);
+  //     foods.forEach((item, index) => {
+  //       terpilih.innerHTML += `<b>${item.name},</b>`;
+  //     });
+  //   }
+  // };
+  chooseBtn.addEventListener("click", (el, index) => {
+    console.log(terpilih);
+    el.preventDefault();
+    foods.forEach((item, index) => {
+      terpilih.innerHTML += `<b>${item.name} </b>`;
+      // terpilih.join(", ");
+      // console.log(item);
+      // localStorage.setItem(`${item.id}`, `${item.name}`);
+    });
+  });
 };
 cardFood();
 
@@ -33,14 +56,13 @@ let p = document.getElementById("deskripsiHead");
 p.innerHTML = `Hai <b>${nameSaved}</b>. Jumlah kebutuhan kalorimu adalah <b>${sum.toFixed(1)} Kkal</b>. Pilihlah makanan yang kamu makan hari ini dan tracking kalorimu.`;
 
 // Pilih makanan
-let chooseBtn = document.querySelector("choose-foods");
-let terpilih = document.getElementById("foodsTerpilih");
+// let chooseBtn = document.querySelector("choose-foods");
+// let terpilih = document.getElementById("foodsTerpilih");
 
-chooseBtn.addEventListener("click", (el) => {
-  console.log(terpilih);
-  cardFood();
-  el.preventDefault();
-  localStorage.setItem(`${item.id}`, `${item.name}`);
-});
-
-terpilih.innerHTML = `Makanan yang kamu pilih: ${item.name}`;
+// chooseBtn.addEventListener("click", (el) => {
+//   console.log(terpilih);
+//   cardFood();
+//   el.preventDefault();
+//   localStorage.setItem(`${item.id}`, `${item.name}`);
+// });
+// terpilih.innerHTML = `Makanan yang kamu pilih: ${item.name}`;
