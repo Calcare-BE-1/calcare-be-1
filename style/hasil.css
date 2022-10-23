@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
-  --pink:#07ac22;
+  --pink:#0f878b;
 }
 *{
     margin:0; padding:0;
@@ -269,17 +269,17 @@ header .fa-bars{
 .keranjang-text .carbohydrat{
 	font-size: 1.3rem;
 	font-weight: 500;
-	color: #235dd3;
+	color: #37e315;
 }
 .keranjang-text .protein{
 	font-size: 1.3rem;
 	font-weight: 500;
-	color: #235dd3;
+	color: #d3b623;
 }
 .keranjang-text .fat{
 	font-size: 1.3rem;
 	font-weight: 500;
-	color: #235dd3;
+	color: #ec0f0f;
 }
 
 @media(max-width:1250px){
