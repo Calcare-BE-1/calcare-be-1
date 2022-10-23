@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>calCare - Peduli Kebutuhan Kalorimu</title>
-        <!-- font awesome cdn link  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
-        <!-- custom css file link  -->
-        <link rel="stylesheet" href="style/style.css">
-    </head>
-    <body>
-        <!-- Bagian Header -->
-        <header>
-            <!-- Navigasi -->
-            <div class="nav__logo">
-                <img src="images/Calcare.png" width="60" alt="Calcare">
-            </div>
-            <nav class="navbar">
-                <a href="index.html">Home</a>
-                <!-- <a href="form.html">Form</a> -->
-                <a href="makanan.html">Pilih Makanan</a>
-                <a href="#review">Tracking</a>
-                <a href="hasil.html">Hasil</a>
-            </nav>
-            <!-- Keranjang makanan -->
-            <!-- <div class="icons">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calCare - Peduli Kebutuhan Kalorimu</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <!-- Bagian Header -->
+    <header>
+      <!-- Navigasi -->
+      <div class="nav__logo">
+        <img src="images/Calcare.png" width="60" alt="Calcare" />
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <!-- <a href="form.html">Form</a> -->
+        <a href="makanan.html">Pilih Makanan</a>
+        <a href="#review">Tracking</a>
+        <a href="hasil.html">Hasil</a>
+      </nav>
+      <!-- Keranjang makanan -->
+      <!-- <div class="icons">
                 <a href="#" class="fas fa-heart"></a>
                 <a href="#" class="fas fa-shopping-cart"></a>
                 <a href="#" class="fas fa-user"></a>
             </div> -->
-        </header>
-        <section class="products" id="products">
-            <h1 class="head"> Makanan </h1>
-            <p class="deskripsi" id="deskripsiHead">Pilihlah makanan yang kamu makan hari ini. Kebutuhan kalori harian akan </p>
-            <div class="search-box">
-                <h2>Pilih Makanan</h2>
-                <form  id="formSearch">
-                    <input type="text" placeholder="Search" id="search" class="search">
-                </form>
-            </div>
-            <div class="box-container" id="list-card">
-            </div>
-        </section>
-        <!-- Bagian Footer -->
-        <footer>
-            <section class="footer">
-              <div class="box-container">
-                <div class="box">
-                  <img src="images/Calcare.png" width="60" alt="Calcare" />
-                  <h3>Calori Care</h3>
-                  <p>Keep Your Calorie For Your Health</p>
-                </div>
-                <div class="box">
-                  <h3>Layanan</h3>
-                  <a href="#">Tentang Kami</a>
-                  <a href="#">Kebijakan & Privasi</a>
-                  <a href="#">Hubungi Kami</a>
-                </div>
-                <div class="box">
-                  <h3>Challenge Partner</h3>
-                  <img src="/images/danone2.png" width="100" alt="Calcare" />
-                </div>
-                <div class="box">
-                  <h3>Mitra</h3>
-                  <img src="/images/skilvul.png" width="80" alt="Calcare" />
-                  <h4>PT.IMPACTBYTE TEKNOLOGI EDUKASI</h4>
-                </div>
-              </div>
-              <!-- Bagian Credit -->
-              <div class="credit">Copyright © <span>BE Group 1 - Danone #Tech4Impact 2022 </span> | All Right Reserved</div>
-            </section>
-          </footer>
-        <script src="js/makanan.js"></script> 
-    </body>
+    </header>
+    <section class="products" id="products">
+      <h1 class="head">Pilih Makanan</h1>
+      <p class="deskripsi" id="deskripsiHead"></p>
+      <p class="deskripsi" id="foodsTerpilih">Makanan yang kamu pilih: </p>
+      <div class="search-box">
+        <h2>Pilih Makanan</h2>
+        <form id="formSearch">
+          <input type="text" placeholder="Search" id="search" class="search" />
+        </form>
+      </div>
+      <div class="box-container" id="list-card"></div>
+    </section>
+    <!-- Bagian Footer -->
+    <footer>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <img src="images/Calcare.png" width="60" alt="Calcare" />
+            <h3>Calori Care</h3>
+            <p>Keep Your Calorie For Your Health</p>
+          </div>
+          <div class="box">
+            <h3>Layanan</h3>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kebijakan & Privasi</a>
+            <a href="#">Hubungi Kami</a>
+          </div>
+          <div class="box">
+            <h3>Challenge Partner</h3>
+            <img src="/images/danone2.png" width="100" alt="Calcare" />
+          </div>
+          <div class="box">
+            <h3>Mitra</h3>
+            <img src="/images/skilvul.png" width="80" alt="Calcare" />
+            <h4>PT.IMPACTBYTE TEKNOLOGI EDUKASI</h4>
+          </div>
+        </div>
+        <!-- Bagian Credit -->
+        <div class="credit">Copyright © <span>BE Group 1 - Danone #Tech4Impact 2022 </span> | All Right Reserved</div>
+      </section>
+    </footer>
+    <script src="js/makanan.js"></script>
+    <!-- <script src="js/form.js"></script> -->
+  </body>
 </html>
