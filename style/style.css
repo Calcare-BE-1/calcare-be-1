@@ -337,6 +337,8 @@ header .fa-bars {
   justify-content: space-between;
   background-color: white;
   box-shadow: #555;
+  
+  
 }
 .search {
   background-color: rgb(245, 247, 250);
@@ -346,6 +348,7 @@ header .fa-bars {
   font-size: 1.5rem;
   color: #03036c;
   font-family: inherit;
+  
 }
 .search:focus {
   outline: 0;

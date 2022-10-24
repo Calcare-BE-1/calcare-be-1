@@ -157,5 +157,5 @@ calculateAll.addEventListener("click", (ev) => {
   barCalorie.style.width = `${percentCalorie}%`;
   barCarbohydrate.style.width = `${percentCarbohydrate}%`;
   barProtein.style.width = `${percentProtein}%`;
-  barFat.style.width = `${percentProtein}%`;
+  barFat.style.width = `${percentFat}%`;
 });
