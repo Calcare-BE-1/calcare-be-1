@@ -6,12 +6,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'Poppins', sans-serif;; */
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   outline: none;
   border: none;
   text-decoration: none;
-  transition: 0.2s linear;
+  transition: 1s linear;
 }
 
 html {
@@ -38,7 +37,89 @@ section {
 .heading span {
   color: var(--green);
 }
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+@media screen and (min-width: 968px) {
+:root {
+  --big-font-size: 3.5rem;
+  --h2-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --smaller-font-size: .875rem;
+}
+}
 
+/*===== BASE =====*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: var(--header-height) 0 0 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--second-color);
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*===== CLASS CSS ===== */
+.section-title {
+  position: relative;
+  font-size: 2rem;
+  color: rgb(27, 16, 236);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 64px;
+  height: 0.18rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 2rem;
+  background-color: var(--first-color);
+}
+
+.section {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+/*===== LAYOUT =====*/
+.bd-grid {
+  max-width: 1024px;
+  display: grid;
+  margin-left: var(--mb-2);
+  margin-right: var(--mb-2);
+}
+
+
+/* =================================BUTTON================================ */
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -54,7 +135,8 @@ section {
   background: var(--green);
 }
 
-/* Header */
+
+/* ================================HEADER================================ */
 header {
   position: fixed;
   top: 0;
@@ -113,7 +195,8 @@ header .fa-bars {
   display: none;
 }
 
-/* Home */
+
+/* =================================HOME======================================= */
 .home {
   display: flex;
   align-items: center;
@@ -146,48 +229,7 @@ header .fa-bars {
   line-height: 1.5;
 }
 
-/* icons */
-.icons-container {
-  background: #eee;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
-.icons-container .icons {
-  background: #fff;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  flex: 1 1 25rem;
-}
-
-.icons-container .icons img {
-  height: 5rem;
-  margin-right: 2rem;
-}
-
-.icons-container .icons h3 {
-  color: #333;
-  padding-bottom: 0.5rem;
-  font-size: 1.5rem;
-}
-
-.icons-container .icons span {
-  color: #555;
-  font-size: 1.3rem;
-}
-
-/* Pilih Makanan */
-.products .box-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-/* Blog/Article */
+/* ==============================ARTIKEL============================= */
 #blog {
   display: flex;
   background: white;
@@ -199,13 +241,11 @@ header .fa-bars {
   flex-wrap: wrap;
   gap: 1.5rem;
 }
-/* Artikel Kesehatan */
 .latbel {
   text-align: center;
   font-size: 3rem;
   color: #333;
   padding: 2rem;
-  /* margin:2rem 0; */
 }
 .blog-heading {
   display: flex;
@@ -270,51 +310,25 @@ header .fa-bars {
   color: var(--green);
   transition: all ease 0.3s;
 }
-@media (max-width: 1250px) {
-  .blog-box {
-    width: 300px;
-  }
-}
-@media (max-width: 1100px) {
-  .blog-box {
-    width: 70%;
-  }
-}
-@media (max-width: 550px) {
-  .blog-box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 20px;
-  }
-}
 
-@media (max-width: 1250px) {
-  .blog-box {
-    width: 300px;
-  }
-}
-@media (max-width: 1100px) {
-  .blog-box {
-    width: 70%;
-  }
-}
-@media (max-width: 550px) {
-  .blog-box {
-    margin: 20px 10px;
-    width: 100%;
-  }
-  #blog {
-    padding: 20px;
-  }
+.head {
+  text-align: center;
+  font-size: 3rem;
+  color: #333;
+  padding-top: 6rem;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-bottom: 0rem;
+  margin: 1rem 2rem;
+  background: none;
+  justify-content: space-between;
 }
 
 #deskripsiHead {
   padding-top: 0rem;
   font-size: 2rem;
 }
-/* search */
+/* ===============================Search Box=============================== */
 .search-box {
   margin: 3rem;
   display: flex;
@@ -340,27 +354,25 @@ header .fa-bars {
   color: rgb(93, 89, 89);
 }
 
-/* Makanan */
+/* ==============================PILIH MAKANAN============================ */
+.products .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
 .head {
   text-align: center;
   font-size: 3rem;
   color: #333;
   padding-top: 6rem;
   padding-right: 6rem;
-  padding-left: 6rem;
+  padding-left: 0rem;
   padding-bottom: 0rem;
   margin: 1rem 2rem;
   margin-top: 50px;
   background: none;
   justify-content: space-between;
 }
-.deskripsi {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  font-size: 2rem;
-}
-
 .products .box-container .box {
   flex: 1 1 20rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -369,22 +381,6 @@ header .fa-bars {
   position: relative;
 }
 
-.box {
-  background-color: white;
-}
-
-/* .products .box-container .box .discount {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  padding: 0.7rem 1rem;
-  font-size: 2rem;
-  color: var(--green);
-  background: rgba(255, 51, 153, 0.05);
-  z-index: 1;
-  border-radius: 0.5rem;
-} */
-
 .products .box-container .box .image {
   position: relative;
   text-align: center;
@@ -392,11 +388,17 @@ header .fa-bars {
   margin-left: 25px;
   padding-top: 2rem;
   overflow: hidden;
-  width: 25rem;
+  width: 20rem;
 }
-
+.deskripsi {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  font-size: 2rem;
+}
 .products .box-container .box .image img {
-  height: 25rem;
+  height: 20rem;
+  width:max-content;
 }
 
 .products .box-container .box:hover .image img {
@@ -431,7 +433,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .image .icons a:hover {
-  background: #0c6e71;
+  background: #333;
 }
 
 .products .box-container .box .content {
@@ -445,7 +447,7 @@ header .fa-bars {
 }
 
 .products .box-container .box .content .calori {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--green);
   font-weight: bolder;
   padding-top: 1rem;
@@ -458,7 +460,193 @@ header .fa-bars {
   text-decoration: line-through;
 }
 
-/* FOOTER  */
+/* =========================FORM================================ */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: 1030;
+  margin-right: 1030;
+}
+.container-lg {
+  max-width: auto;
+  margin-top: 120px;
+  font-size: large;
+  padding-bottom: 5rem;
+}
+.container-lg .col {
+  font-size: medium;
+}
+
+form {
+  align-content: center;
+ }
+ 
+.form-control {
+  margin-top: 1rem;
+  border-radius: 10px;
+  color: #333;
+  padding: 0.9rem 3.5rem;
+  font-size: 1.7rem;
+}
+
+.form-label {
+  font-size: medium;
+}
+
+
+/* ==================================HASIL======================================= */
+/* MAKANAN YANG DI PILIH */
+#keranjang{
+	display: flex;
+	background: white;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: .5rem;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+.latbel{
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(32, 28, 222);
+    padding:2rem;
+    margin:2rem 0;
+    margin-top: 100px;
+ 
+}
+.keranjang-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 20px 0px;
+	flex-wrap: wrap;
+}
+.keranjang-box{
+	width: 350px;
+	background-color: #eff4fd;
+	border: 1px solid #fafafa;
+	margin: 20px;
+}
+.keranjang-img{
+	width: 100%;
+	height: auto;
+}
+.keranjang-img img{
+	width: 50%;
+	height: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+.keranjang-text{
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+  align-items: flex;
+}
+.keranjang-text{
+  font-size: 1.5rem;
+  font-family: poppins;
+	font-weight: 500;
+	color: #0d0e0e;
+}
+.keranjang-text .calori{
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #1749d4;
+}
+.keranjang-text .carbohydrat{
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #235dd3;
+}
+.keranjang-text .protein{
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #235dd3;
+}
+.keranjang-text .fat{
+	font-size: 1.3rem;
+	font-weight: 500;
+	color: #235dd3;
+}
+
+/* HASIL PERHITUNGAN */
+.Hasil__container {
+  row-gap: 2rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.Hasil__subtitle {
+  margin-bottom: 1rem;
+}
+
+.Hasil__text {
+  margin-bottom: 2rem;
+}
+
+.Hasil__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .7rem 4rem;
+  margin-bottom: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+}
+
+.Hasil__icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: green;
+}
+
+.Hasil__names {
+  display: flex;
+  align-items: center;
+}
+
+.Hasil__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(33, 160, 7);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+
+.Hasil__Kalori {
+  width: 95%;
+}
+
+.Hasil__protein {
+  width: 85%;
+}
+
+.Hasil__kb {
+  width: 65%;
+}
+
+.Hasil__lemak {
+  width: 85%;
+}
+
+.Hasil__img {
+  border-radius: .5rem;
+}
+
+.btn:hover{
+  background:var(--pink);
+}
+
+/* ==================================FOOTER====================================== */
 .footer .box-container {
   padding: 1.5rem;
   margin-top: 1.5rem;
@@ -499,7 +687,6 @@ header .fa-bars {
 
 .footer .credit {
   text-align: center;
-  /* padding: 1.5rem; */
   margin-top: 1.5rem;
   padding-top: 2.5rem;
   font-size: 1.5rem;
@@ -512,7 +699,7 @@ header .fa-bars {
   color: var(--green);
 }
 
-/* media queries  */
+/*========================= Media Queries==========================  */
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -583,4 +770,121 @@ header .fa-bars {
   .heading {
     font-size: 3rem;
   }
+}
+@media (max-width: 1250px) {
+  .blog-box {
+    width: 300px;
+  }
+}
+@media (max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
+  #blog {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .blog-box {
+    width: 300px;
+  }
+}
+@media (max-width: 1100px) {
+  .blog-box {
+    width: 70%;
+  }
+}
+@media (max-width: 550px) {
+  .blog-box {
+    margin: 20px 10px;
+    width: 100%;
+  }
+  #blog {
+    padding: 20px;
+  }
+}
+@media(max-width:1250px){
+	.keranjang-box{
+		width: 300px;
+	}
+}
+@media(max-width:1100px){
+	.keranjang-box{
+		width: 70%;
+	}
+}
+@media(max-width:550px){
+	.keranjang-box{
+		margin: 20px 10px;
+		width: 100%;
+	}
+	#keranjang{
+		padding: 20px;
+	}
+}
+
+@media(max-width:1250px){
+	.keranjang-box{
+		width: 300px;
+	}
+}
+@media(max-width:1100px){
+	.keranjang-box{
+		width: 70%;
+	}
+}
+@media(max-width:550px){
+	.keranjang-box{
+		margin: 20px 10px;
+		width: 100%;
+	}
+	#keranjang{
+		padding: 20px;
+	}
+}
+@media screen and (min-width: 576px) {
+  .Hasil__container {
+    grid-template-columns: .7fr;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+  
+}
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+  }
+  .section-title {
+    margin-bottom: var(--mb-6);
+  }
+  .section-title::after {
+    width: 80px;
+    top: 3rem;
+  }
+  .Hasil__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    text-align: initial;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .bd-grid {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 }
