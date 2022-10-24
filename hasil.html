@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/hasil.css">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- font awesome cdn link  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
+        <title>calCare - Peduli Kebutuhan Kalorimu</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header>
+            <input type="checkbox" name="" id="toggler">
+            <label for="toggler" class="fas fa-bars"></label>
+            <div class="nav__logo">
+                <a href="index.html"><img src="images/Calcare.png" width="60" alt="Calcare"/></a>
+            </div>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="form.html">Form</a>
+                <a href="makanan.html">Pilih Makanan</a>
+                <a href="hasil.html">Hasil</a>
+            </nav>
+        </header>
+        <section class="keranjang section" id="keranjang">
+            <!-- Tampilkan makanan dari localStorage -->
+            <div>
+                <h1 class="latbel">Makanan yang telah dipilih</h1><br>
+                <p class="deskripsi-hasil" id="deskripsiHasil">Di bawah ini adalah makanan yang telah kamu pilih dari halaman sebelumnya. Klik tombol di bawah ini untuk menghitung kebutuhan kalorimu.</p>
+                <center><a href="#Hasil" class="btn" id="calculate-all">Hitung Kalorimu</a></center>
+            </div>
+            <div class="keranjang-container" id="cart">
+            </div>	
+        </section>        
+            <!--===== Hasil =====-->
+            <section class="Hasil section" id="Hasil">
+                <h2 class="section-title">Hasil</h2>
+                <div class="Hasil__container bd-grid" id="group-calorie-needed">          
+                <!-- Bar tampil disini -->
+            </section>
+
+        <!--===== FOOTER =====-->
+        <section class="footer">
+
+            <div class="box-container">
+        
+                <div class="box">
+                    <img src="images/Calcare.png" width="60" alt="Calcare">
+                    <h3>Calori Care</h3>
+                    <p> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
+                        Daerah Khusus Ibukota Jakarta 12950</p>
+                </div>
+        
+                <div class="box">
+                    <h3>Layanan</h3>
+                    <a href="#">Tentang Kami</a>
+                    <a href="#">Kebijakan & Privasi</a>
+                    <a href="#">Hubungi Kami</a>
+                </div>
+        
+                <div class="box">
+                    <h3>Patner</h3>
+                    <img src="images/danone2.png" width="100" alt="Calcare">
+                    <br>Jl. H. R. Rasuna Said </br>
+                        Daerah Khusus Ibukota Jakarta 12950</p>
+                </div>
+        
+                <div class="box">
+                    <h3>Mitra</h3>
+                    <img src="images/skilvul.png" width="80" alt="Calcare" >
+                    <h4>PT IMPACTBYTE TEKNOLOGI EDUKASI.</h4>
+                </div>
+        
+            </div>
+        
+            <div class="credit"> Copyright ©  <span>BE Group1 - Danone #Tech4Impact 2022  </span> | All Right Reserved </div>
+        
+        </section>
+        <script src="./js/hasil.js"></script>
+    </body>
+</html>

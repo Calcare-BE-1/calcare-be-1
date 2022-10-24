@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
+    <title>calCare - Peduli Kebutuhan Kalorimu</title>
+  </head>
+  <body>
+    <!-- Bagian Header  -->
+    <header>
+      <div class="nav__logo">
+        <a href="index.html"><img src="images/Calcare.png" width="60" alt="Calcare" /></a>
+      </div>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="form.html">Form</a>
+        <a href="makanan.html">Pilih Makanan</a>
+        <a href="hasil.html">Hasil</a>
+      </nav>
+    </header>
+    <main>
+      <!-- Bagian Form -->
+      <form id="form" action="/makanan.html" autocomplete="on">
+        <div class="container-lg">
+          <div class="row">
+            <!-- Grid kiri -->
+            <div class="col-3"></div>
+            <!-- Grid tengah -->
+            <div class="col">
+              <h2 class="form-title"><b>Masukkan data pendukung</b></h2>
+              <p>Sebelum mulai menghitung kebutuhan kalorimu, yuk bantu kami dengan mengisi beberapa data pendukung di bawah ini.</p>
+              <!-- Nama -->
+              <div class="mb-3">
+                <label for="Nama" class="form-label" id="label-name">Nama</label>
+                <input type="text" class="form-control" id="name-input" required autofocus />
+              </div>
+              <!-- Jenis Kelamin -->
+              <div class="mb-3">
+                <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
+                <input type="text" class="form-control" id="jk-input" required />
+                <div id="jkHelp" class="form-text">*Isi dengan "laki-laki" atau "perempuan"</div>
+              </div>
+              <!-- Usia -->
+              <div class="mb-3">
+                <label for="Usia" class="form-label">Usia</label>
+                <input type="number" class="form-control" id="age-input" required />
+              </div>
+              <!-- Tinggi Badan -->
+              <div class="mb-3">
+                <label for="tinggiBadan" class="form-label">Tinggi badan</label>
+                <input type="number" class="form-control" id="height-input" required />
+              </div>
+              <!-- Berat Badan -->
+              <div class="mb-3">
+                <label for="beratBadan" class="form-label">Berat badan</label>
+                <input type="number" class="form-control" id="weight-input" required />
+              </div>
+              <!-- Warning -->
+              <p id="warning" style="color: red"></p>
+              <!-- Submit -->
+              <button type="submit" class="btn btn-primary" id="submit-input">Submit dan Pilih Makanan</button>
+              <!-- <button type="submit" class="btn btn-primary" id="submit-input">Submit</button> -->
+              <!-- <a href="form.html" type="submit" class="btn btn-primary" id="submit-input">Submit dan Hitung Kalori</button></a> -->
+              <!-- Grid kanan -->
+            </div>
+            <div class="col-3"></div>
+          </div>
+        </div>
+      </form>
+    </main>
+    <!-- Bagian Footer -->
+    <footer>
+      <section class="footer">
+        <div class="box-container">
+          <div class="box">
+            <img src="images/Calcare.png" width="60" alt="Calcare" />
+            <h3>Calori Care</h3>
+            <p>Keep Your Calorie For Your Health</p>
+          </div>
+          <div class="box">
+            <h3>Layanan</h3>
+            <a href="#">Tentang Kami</a>
+            <a href="#">Kebijakan & Privasi</a>
+            <a href="#">Hubungi Kami</a>
+          </div>
+          <div class="box">
+            <h3>Challenge Partner</h3>
+            <img src="/images/danone2.png" width="100" alt="Calcare" />
+          </div>
+          <div class="box">
+            <h3>Mitra</h3>
+            <img src="/images/skilvul.png" width="80" alt="Calcare" />
+            <h4>PT.IMPACTBYTE TEKNOLOGI EDUKASI</h4>
+          </div>
+        </div>
+        <!-- Bagian Credit -->
+        <div class="credit">Copyright © <span>BE Group 1 - Danone #Tech4Impact 2022 </span> | All Right Reserved</div>
+      </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script defer src="js/form.js"></script>
+  </body>
+</html>
