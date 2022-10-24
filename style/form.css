@@ -138,6 +138,10 @@ header .fa-bars {
   font-size: medium;
 }
 
+h2 .form-title b{
+  padding-top: 100px;
+}
+
 form {
   align-content: center;
  }

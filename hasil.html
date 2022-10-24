@@ -3,154 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <link rel="stylesheet" href="style/style.css">
-
+        <link rel="stylesheet" href="style/hasil.css">
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <!-- font awesome cdn link  -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
-
-        <title>Calcare BE 1</title>
+        <title>calCare - Peduli Kebutuhan Kalorimu</title>
     </head>
     <body>
         <!--===== HEADER =====-->
         <header>
-
             <input type="checkbox" name="" id="toggler">
             <label for="toggler" class="fas fa-bars"></label>
-        
             <div class="nav__logo">
                 <a href="index.html"><img src="images/Calcare.png" width="60" alt="Calcare"/></a>
             </div>
             <nav class="navbar">
                 <a href="index.html">Home</a>
+                <a href="form.html">Form</a>
                 <a href="makanan.html">Pilih Makanan</a>
-                <!-- <a href="#">Tracking</a> -->
                 <a href="hasil.html">Hasil</a>
             </nav>
-           
         </header>
         <section class="keranjang section" id="keranjang">
-
-            <h1 class="latbel"> Keranjang Makanan </h1>
-        
-            <div class="keranjang-container">
-        
-                <div class="keranjang-box">
-                    <div class="keranjang-img">
-                        <img src="images/roti.png" alt="keranjang" height="100px"
-                        align="left">
-                    </div>
-        
-                    <div class="keranjang-text">
-                            <h3>Roti</h3>
-                            <div class="calori"> 264,6 Kcal </div>
-                            <div class="carbohydrat"> 26 Co2 </div>
-                            <div class="protein"> 264,6 p </div>
-                            <div class="fat"> 264,6 L</div>
-                    </div>
-                </div>
-
-                <div class="keranjang-box">
-                    <div class="keranjang-img">
-                        <img src="images/roti.png" alt="keranjang" height="100px"
-                        align="left">
-                    </div>
-        
-                    <div class="keranjang-text">
-                            <h3>Roti</h3>
-                            <div class="calori"> 264,6 Kcal </div>
-                            <div class="carbohydrat"> 26 Co2 </div>
-                            <div class="protein"> 264,6 p </div>
-                            <div class="fat"> 264,6 L</div>
-                    </div>
-                </div>
-
-                <div class="keranjang-box">
-                    <div class="keranjang-img">
-                        <img src="images/roti.png" alt="keranjang" height="100px"
-                        align="left">
-                    </div>
-        
-                    <div class="keranjang-text">
-                            <h3>Roti</h3>
-                            <div class="calori"> 264,6 Kcal </div>
-                            <div class="carbohydrat"> 26 Co2 </div>
-                            <div class="protein"> 264,6 p </div>
-                            <div class="fat"> 264,6 L</div>
-                    </div>
-                </div>
-                <!-- <a href="makanan.html" button type="submit" class="btn btn-primary">Hitung</button></a> -->
-                   
+            <!-- Tampilkan makanan dari localStorage -->
+            <div>
+                <h1 class="latbel">Makanan yang telah dipilih</h1><br>
+                <p class="deskripsi-hasil" id="deskripsiHasil">Di bawah ini adalah makanan yang telah kamu pilih dari halaman sebelumnya. Klik tombol di bawah ini untuk menghitung kebutuhan kalorimu.</p>
+                <a href="#Hasil" class="btn" id="calculate-all">Hitung Kalorimu</a>
+            </div>
+            <div class="keranjang-container" id="cart">
             </div>	
         </section>        
-
             <!--===== Hasil =====-->
             <section class="Hasil section" id="Hasil">
                 <h2 class="section-title">Hasil</h2>
-
-                <div class="Hasil__container bd-grid">          
-                    <div>
-                        <h2 class="Hasil__subtitle">Hasil Tracking</h2>
-                        <div class="Hasil__data">
-                            <div class="Hasil__names">
-                                <i class='bx bxs-bookmark Hasil__icon'></i>
-                                <span class="Hasil__name">Kalori</span>
-                            </div>
-                            <div class="Hasil__bar Hasil__Kalori">
-
-                            </div>
-                            <div>
-                                <span class="Hasil__percentage">95%</span>
-                            </div>
-                        </div>
-                        <div class="Hasil__data">
-                            <div class="Hasil__names">
-                                <i class='bx bxs-bookmark Hasil__icon'></i>
-                                <span class="Hasil__name">Protein</span>
-                            </div>
-                            <div class="Hasil__bar Hasil__protein">
-                                
-                            </div>
-                            <div>
-                                <span class="Hasil__percentage">85%</span>
-                            </div>
-                        </div>
-                        <div class="Hasil__data">
-                            <div class="Hasil__names">
-                                <i class='bx bxs-bookmark Hasil__icon' ></i>
-                                <span class="Hasil__name">Karbohidrat</span>
-                            </div>
-                            <div class="Hasil__bar Hasil__kb">
-                                
-                            </div>
-                            <div>
-                                <span class="Hasil__percentage">65%</span>
-                            </div>
-                        </div>
-                        <div class="Hasil__data">
-                            <div class="Hasil__names">
-                                <i class='bx bxs-bookmark Hasil__icon'></i>
-                                <span class="Hasil__name">Lemak</span>
-                            </div>
-                            <div class="Hasil__bar Hasil__lemak">
-                                
-                            </div>
-                            <div>
-                                <span class="Hasil__percentage">85%</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div>              
-                        <img src="assets/img/work3.jpg" alt="" class="Hasil__img">
-                    </div>
-                </div>
+                <div class="Hasil__container bd-grid" id="group-calorie-needed">          
+                <!-- Bar tampil disini -->
             </section>
-
-
 
         <!--===== FOOTER =====-->
         <section class="footer">
@@ -158,7 +49,7 @@
             <div class="box-container">
         
                 <div class="box">
-                    <img src="images/Calcare.png" width="60" height="40" alt="Calcare">
+                    <img src="images/Calcare.png" width="60" alt="Calcare">
                     <h3>Calori Care</h3>
                     <p> Keep Your Calorie For Your Health</br>Jl. H. R. Rasuna Said
                         Daerah Khusus Ibukota Jakarta 12950</p>
@@ -173,14 +64,14 @@
         
                 <div class="box">
                     <h3>Patner</h3>
-                    <img src="images/danone2.png" width="100" height="80" alt="Calcare">
+                    <img src="images/danone2.png" width="100" alt="Calcare">
                     <br>Jl. H. R. Rasuna Said </br>
                         Daerah Khusus Ibukota Jakarta 12950</p>
                 </div>
         
                 <div class="box">
                     <h3>Mitra</h3>
-                    <img src="images/skilvul.png" width="80" height="40" alt="Calcare" >
+                    <img src="images/skilvul.png" width="80" alt="Calcare" >
                     <h4>PT IMPACTBYTE TEKNOLOGI EDUKASI.</h4>
                 </div>
         
@@ -189,6 +80,6 @@
             <div class="credit"> Copyright ©  <span>BE Group1 - Danone #Tech4Impact 2022  </span> | All Right Reserved </div>
         
         </section>
-        
+        <script src="./js/hasil.js"></script>
     </body>
 </html>

@@ -22,10 +22,10 @@ let cardFood = async () => {
             </div>
             <div class="content">
                 <h3>${item.name}</h3>
-                <div class="calori">cal:${item.calories} KKal</div>
-                <div class="calori">karb:${item.carbohydrate} g</div>
-                <div class="calori">pro:${item.protein} KKal</div>
-                <div class="calori">fat:${item.fat} KKal</div>
+                <div class="calori" id="calories">${item.calories} KKal</div>
+                <div class="nutrisi" id="karbohidrat">Karb: ${item.carbohydrate} gr</div>
+                <div class="nutrisi" id="protein">Pro: ${item.protein} gr</div>
+                <div class="nutrisi" id="lemak">Lem: ${item.fat} gr</div>
             </div>
         </div>`;
   });
