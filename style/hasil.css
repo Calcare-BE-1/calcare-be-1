@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
 :root {
-  --pink: #07ac22;
+  --green: #0f878b;
 }
 * {
   margin: 0;
@@ -12,7 +12,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  /* text-transform: capitalize; */
   transition: 0.2s linear;
 }
 section {
@@ -29,7 +28,7 @@ section {
 }
 
 .heading span {
-  color: var(--pink);
+  color: var(--green);
 }
 
 html {
@@ -84,8 +83,8 @@ a {
 /*===== CLASS CSS ===== */
 .section-title {
   position: relative;
-  font-size: 2rem;
-  color: rgb(27, 16, 236);
+  font-size: 3rem;
+  color: #333;
   margin-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
@@ -149,7 +148,7 @@ header .logo {
 }
 
 header .logo span {
-  color: var(--pink);
+  color: var(--green);
 }
 
 header .navbar a {
@@ -160,7 +159,7 @@ header .navbar a {
 }
 
 header .navbar a:hover {
-  color: var(--pink);
+  color: var(--green);
 }
 
 header .icons a {
@@ -205,37 +204,63 @@ header .fa-bars {
   background: white;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 0.5rem;
   flex-wrap: wrap;
   gap: 1.5rem;
 }
+
 .latbel {
+  font-size: 3rem;
+  color: #333;
+  padding: 2rem;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 6rem;
+  padding-right: 6rem;
+  padding-left: 0rem;
+  padding-bottom: 0rem;
+  background: none;
+  justify-content: space-between;
+}
+
+.deskripsi-hasil {
   text-align: center;
   font-size: 2rem;
-  color: rgb(32, 28, 222);
-  padding: 2rem;
-  margin: 2rem 0;
-  margin-top: 100px;
 }
-/* .btn{
+
+#deskripsiHasil {
+  padding-top: 0rem;
+  font-size: 2rem;
+}
+
+.btn {
   display: inline-block;
+  align-items: center;
   margin-top: 1rem;
-  border-radius: 5rem;
-  background:rgb(24, 47, 214);
-  color:#fff;
-  padding:.9rem 3.5rem;
+  border-radius: 1rem;
+  background: #27b2b7;
+  color: #fff;
+  padding: 0.9rem 3.5rem;
   cursor: pointer;
   font-size: 1.7rem;
-  position: relative;
-} */
+}
+.btn:hover {
+  background: #082d2f;
+}
 .keranjang-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
+  /* margin: 20px 0px; */
   flex-wrap: wrap;
+  flex: 1 1 20rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 10%);
+  border-radius: 0rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 .keranjang-box {
   width: 350px;
@@ -244,7 +269,7 @@ header .fa-bars {
   margin: 20px;
 }
 .keranjang-img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 .keranjang-img img {
@@ -258,32 +283,37 @@ header .fa-bars {
   display: flex;
   flex-direction: column;
   align-items: flex;
-}
-.keranjang-text {
   font-size: 1.5rem;
-  font-family: poppins;
+  /* font-family: "poppins"; */
   font-weight: 500;
   color: #0d0e0e;
 }
-.keranjang-text .calori {
-  font-size: 1.3rem;
-  font-weight: 500;
-  color: #1749d4;
+
+ .calori {
+  font-size: 1.5rem;
+  font-weight: bo;
+  color: var(--green);
 }
-.keranjang-text .carbohydrat {
+.nutrisi {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #235dd3;
+  color: var(--green);
 }
-.keranjang-text .protein {
+#karbohidrat {
   font-size: 1.3rem;
-  font-weight: 500;
-  color: #235dd3;
+  color: #00AF91;
+  font-weight: bolder;
 }
-.keranjang-text .fat {
+#protein {
   font-size: 1.3rem;
-  font-weight: 500;
-  color: #235dd3;
+  color: #007965;
+  font-weight: bolder;
+}
+#lemak {
+  font-size: 1.3rem;
+  color: #F58634;
+  font-weight: bolder;
+}
 }
 
 @media (max-width: 1250px) {
@@ -341,6 +371,7 @@ header .fa-bars {
 
 .Hasil__text {
   margin-bottom: 2rem;
+
 }
 
 .Hasil__data {
@@ -370,26 +401,42 @@ header .fa-bars {
   position: absolute;
   left: 0;
   bottom: 0;
-  background-color: rgb(33, 160, 7);
+  /* background-color: rgb(33, 160, 7); */
   height: 0.25rem;
   border-radius: 0.5rem;
   z-index: var(--z-back);
 }
 
-.Hasil__Kalori {
-  width: 95%;
+/* Mengatur bar hasil */
+/* Bar dibutuhkan */
+#bar-calorie-needed {
+  background-color: var(--green);
+  width: 100%;
 }
-
-.Hasil__protein {
-  width: 85%;
+#bar-karbohidrat-needed {
+  background-color: #00AF91;
+  width: 100%;
 }
-
-.Hasil__kb {
-  width: 65%;
+#bar-protein-needed {
+  background-color: #007965;
+  width: 100%;
 }
-
-.Hasil__lemak {
-  width: 85%;
+#bar-lemak-needed {
+  background-color: #F58634;
+  width: 100%;
+}
+/* Bar terpenuhi */
+#bar-kalori-fulfilled {
+  background-color: var(--green);
+}
+#bar-karbohidrat-fulfilled {
+  background-color: #00AF91;
+}
+#bar-protein-fulfilled {
+  background-color: #007965;
+}
+#bar-lemak-fulfilled {
+  background-color: #F58634;
 }
 
 .Hasil__img {
@@ -397,7 +444,7 @@ header .fa-bars {
 }
 
 .btn:hover {
-  background: var(--pink);
+  background: var(--green);
 }
 
 .kebutuhan-kalori {
@@ -435,7 +482,7 @@ FOOTER */
 }
 
 .footer .box-container .box a:hover {
-  color: var(--pink);
+  color: var(--green);
   text-decoration: underline;
 }
 
@@ -455,7 +502,7 @@ FOOTER */
 }
 
 .footer .credit span {
-  color: var(--pink);
+  color: var(--green);
 }
 
 /* media queries  */
@@ -537,7 +584,7 @@ FOOTER */
     margin: 0;
   }
   .section {
-    padding-top: 4rem;
+    /* padding-top: 4rem; */
     padding-bottom: 3rem;
   }
   .section-title {
