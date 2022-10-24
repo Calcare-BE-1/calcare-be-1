@@ -226,7 +226,7 @@ header .fa-bars {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 20px 0px;
+  margin: 0px;
   flex-wrap: wrap;
 }
 .blog-box {
@@ -357,7 +357,7 @@ header .fa-bars {
 .deskripsi {
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   font-size: 2rem;
 }
 
@@ -464,7 +464,7 @@ header .fa-bars {
   margin-top: 1.5rem;
   padding-top: 2.5rem;
   color: #333;
-  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  /* border-top: 0.1rem solid rgba(0, 0, 0, 0.1); */
   padding-bottom: 9rem;
   display: flex;
   flex-wrap: wrap;

@@ -11,7 +11,7 @@ let getCardArtikel = async () => {
       cardArtikel.innerHTML += `
       <div class="blog-box">
     <div class="blog-img">
-        <img src="images/calll.webp" alt="Blog">
+        <img src="${item.gambar}" alt="Blog">
     </div>
     <div class="blog-text">
         <span>${item.tanggal}</span>

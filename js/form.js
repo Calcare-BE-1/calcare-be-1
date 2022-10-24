@@ -24,12 +24,12 @@ submitClick.addEventListener("click", (e) => {
 function sumInput() {
   let ageReal = Number(localStorage.getItem("age"));
   let heightReal = Number(localStorage.getItem("height"));
-    let weightReal = Number(localStorage.getItem("weight"));
-    let jkReal = localStorage.getItem("jenisKelamin");
+  let weightReal = Number(localStorage.getItem("weight"));
+  let jkReal = localStorage.getItem("jenisKelamin");
   let sum = 0;
   // Condition
-    if (jkReal === "laki-laki" || jkReal === "LAKI-LAKI") {
-      console.log(jkReal);
+  if (jkReal === "laki-laki" || jkReal === "LAKI-LAKI" || jkReal === "laki laki" || jkReal === "Laki laki") {
+    console.log(jkReal);
     sum = 88.4 + 13.4 * weightReal + 4.8 * heightReal - 5.68 * ageReal;
   } else if (jkReal === "perempuan" || jkReal === "PEREMPUAN") {
     sum = 447.6 + 9.25 * weightReal + 3.1 * heightReal - 4.33 * ageReal;

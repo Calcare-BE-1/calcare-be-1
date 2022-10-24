@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <script src="https://kit.fontawesome.com/b7c9c29312.js" crossorigin="anonymous"></script>
 
-        <title>Calcare BE 1</title>
+        <title>calCare - Peduli Kebutuhan Kalorimu</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -34,11 +34,11 @@
         </header>
         <section class="keranjang section" id="keranjang">
 
-            <h1 class="latbel"> Keranjang Makanan </h1>
+            <h1 class="latbel">Makanan yang telah dipilih</h1><br>
         
-            <div class="keranjang-container">
+            <div class="keranjang-container" id="cart">
         
-                <div class="keranjang-box">
+                <!-- <div class="keranjang-box">
                     <div class="keranjang-img">
                         <img src="images/roti.png" alt="keranjang" height="100px"
                         align="left">
@@ -81,7 +81,7 @@
                             <div class="protein"> 264,6 p </div>
                             <div class="fat"> 264,6 L</div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <a href="makanan.html" button type="submit" class="btn btn-primary">Hitung</button></a> -->
                    
             </div>	
@@ -92,8 +92,65 @@
                 <h2 class="section-title">Hasil</h2>
 
                 <div class="Hasil__container bd-grid">          
+                    <div class ="kebutuhan-kalori" id="butuh-kalori">
+                        <h2 class="Hasil__subtitle">Kebutuhan Kalori</h2>
+                        <div class="Hasil__data">
+                            <div class="Hasil__names">
+                                <i class='bx bxs-bookmark Hasil__icon'></i>
+                                <span class="Hasil__name">Kalori</span>
+                            </div>
+                            <div class="Hasil__bar Hasil__Kalori">
+
+                            </div>
+                            <div>
+                                <span class="Hasil__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="Hasil__data">
+                            <div class="Hasil__names">
+                                <i class='bx bxs-bookmark Hasil__icon'></i>
+                                <span class="Hasil__name">Protein</span>
+                            </div>
+                            <div class="Hasil__bar Hasil__protein">
+                                
+                            </div>
+                            <div>
+                                <span class="Hasil__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="Hasil__data">
+                            <div class="Hasil__names">
+                                <i class='bx bxs-bookmark Hasil__icon' ></i>
+                                <span class="Hasil__name">Karbohidrat</span>
+                            </div>
+                            <div class="Hasil__bar Hasil__kb">
+                                
+                            </div>
+                            <div>
+                                <span class="Hasil__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="Hasil__data">
+                            <div class="Hasil__names">
+                                <i class='bx bxs-bookmark Hasil__icon'></i>
+                                <span class="Hasil__name">Lemak</span>
+                            </div>
+                            <div class="Hasil__bar Hasil__lemak">
+                                
+                            </div>
+                            <div>
+                                <span class="Hasil__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="Hasil__img">
+                    </div>
+                </div>
+                <div class="Hasil__container bd-grid">          
                     <div>
-                        <h2 class="Hasil__subtitle">Hasil Tracking</h2>
+                        <h2 class="Hasil__subtitle">Kalori Terpenuhi</h2>
                         <div class="Hasil__data">
                             <div class="Hasil__names">
                                 <i class='bx bxs-bookmark Hasil__icon'></i>
@@ -189,6 +246,6 @@
             <div class="credit"> Copyright ©  <span>BE Group1 - Danone #Tech4Impact 2022  </span> | All Right Reserved </div>
         
         </section>
-        
+        <script src="./js/hasil.js"></script>
     </body>
 </html>
