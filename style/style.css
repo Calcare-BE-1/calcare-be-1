@@ -310,8 +310,6 @@ header .fa-bars {
   }
 }
 
-
-
 #deskripsiHead {
   padding-top: 0rem;
   font-size: 2rem;
@@ -356,7 +354,7 @@ header .fa-bars {
   background: none;
   justify-content: space-between;
 }
-.deskripsi{
+.deskripsi {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 50px;
@@ -371,7 +369,7 @@ header .fa-bars {
   position: relative;
 }
 
-.box{
+.box {
   background-color: white;
 }
 
@@ -394,7 +392,7 @@ header .fa-bars {
   margin-left: 25px;
   padding-top: 2rem;
   overflow: hidden;
-  width: 20rem;
+  width: 25rem;
 }
 
 .products .box-container .box .image img {

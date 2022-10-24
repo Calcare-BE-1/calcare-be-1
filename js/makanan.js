@@ -1,19 +1,23 @@
-// Call Food API
 let listCards = document.getElementById("list-card");
+// Untuk menampung makanan yang dipilih
+let arrFoods = [];
+let foods = [];
+console.log(typeof foods);
+// Memanggil Foods API
 let cardFood = async () => {
   let URL = "https://634ff24678563c1d82b45254.mockapi.io/makanan";
   let response = await fetch(URL);
-  let foods = await response.json();
-  console.log(foods);
-  // tampilkan card makanan
+  foods = await response.json();
+  // console.log(foods);
+  // looping card makanan
   foods.forEach((item, index) => {
     listCards.innerHTML += `
       </br>
-        <div class="box">
+        <div class="box card">
             <div class="image">
                 <img src="${item.image}" alt="">
                 <div class="icons">
-                    <a href="#" class="cart-btn" id="choose-foods">Pilih</a>
+                    <a href="#" class="cart-btn" id="choose-foods" onclick="selectFoods(${index})">Pilih</a>
                 </div>
             </div>
             <div class="content">
@@ -22,47 +26,40 @@ let cardFood = async () => {
             </div>
         </div>`;
   });
-
-  let chooseBtn = document.getElementById("choose-foods");
-  let terpilih = document.getElementById("foodsTerpilih");
-  // if (chooseBtn.onclick == true) {
-  //   (el, index) => {
-  //     console.log(terpilih);
-  //     el.preventDefault();
-  //     localStorage.setItem(`${foods[0].id}`, `${foods[0].name}`);
-  //     foods.forEach((item, index) => {
-  //       terpilih.innerHTML += `<b>${item.name},</b>`;
-  //     });
-  //   }
-  // };
-  chooseBtn.addEventListener("click", (el, index) => {
-    console.log(terpilih);
-    el.preventDefault();
-    foods.forEach((item, index) => {
-      terpilih.innerHTML += `<b>${item.name} </b>`;
-      // terpilih.join(", ");
-      // console.log(item);
-      // localStorage.setItem(`${item.id}`, `${item.name}`);
-    });
-  });
 };
 cardFood();
+let terpilih = document.getElementById("foodsTerpilih");
+// Memilih makanan dan masuk ke localStorage
+function selectFoods(index) {
+  // Push pilihan ke array
+  arrFoods.push(foods[index]);
+  // Ubah array ke string
+  let arrFoodsIsString = JSON.stringify(arrFoods);
+  // Simpan string ke localStorage
+  localStorage.setItem("arrFoodsIsString", arrFoodsIsString);
 
-// Call Desc Total Calories
+  // Menampilkan makanan yang dipilih di paragraf
+  let getNameFoods = localStorage.getItem("arrFoodsIsString");
+  // Ubah string ke array
+  let arrNameFoods = JSON.parse(getNameFoods);
+  // Untuk menampung nama makanan
+  let callName = [];
+  // Untuk push nama makanan
+  for (let index = 0; index < arrNameFoods.length; index++) {
+    callName.push(arrNameFoods[index].name);
+  }
+  // Menambah koma
+  callName.join(",");
+  // Mengubah ke string
+  let callNames = callName.toString();
+  // Mengubah ke lowercase
+  callNames.toLowerCase();
+  // Menampilkan makanan terpilih
+  terpilih.innerHTML = `Makanan yang kamu pilih adalah <b>${callNames.toLowerCase()}</b>.`;
+}
+
+// Menampilkan total kebutuhan kalori dari localStorage
 let nameSaved = localStorage.getItem("nameInput");
 let sum = Number(localStorage.getItem("sum"));
-console.log(sum);
 let p = document.getElementById("deskripsiHead");
 p.innerHTML = `Hai <b>${nameSaved}</b>. Jumlah kebutuhan kalorimu adalah <b>${sum.toFixed(1)} Kkal</b>. Pilihlah makanan yang kamu makan hari ini dan tracking kalorimu.`;
-
-// Pilih makanan
-// let chooseBtn = document.querySelector("choose-foods");
-// let terpilih = document.getElementById("foodsTerpilih");
-
-// chooseBtn.addEventListener("click", (el) => {
-//   console.log(terpilih);
-//   cardFood();
-//   el.preventDefault();
-//   localStorage.setItem(`${item.id}`, `${item.name}`);
-// });
-// terpilih.innerHTML = `Makanan yang kamu pilih: ${item.name}`;
